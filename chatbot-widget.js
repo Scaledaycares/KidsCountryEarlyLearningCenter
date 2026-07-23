@@ -323,22 +323,22 @@ function sendToGas4(message, isUserMessage) {
         console.log("No lead found in the message; not sent to Google Sheet.");
     }
 }
- document.addEventListener('DOMContentLoaded', function() {
-    var bookingLink = document.getElementById('book-tour-link');
-    var chatbotContainer = document.getElementById('chat-widget');
-    var calendlyContainer = document.getElementById('calendly-widget-container');
-    var backButton = document.getElementById('back-to-chatbot');
-    var chatbotToggle = document.getElementById('chatbot-toggle');
+//  document.addEventListener('DOMContentLoaded', function() {
+//     var bookingLink = document.getElementById('book-tour-link');
+//     var chatbotContainer = document.getElementById('chat-widget');
+//     var calendlyContainer = document.getElementById('calendly-widget-container');
+//     var backButton = document.getElementById('back-to-chatbot');
+//     var chatbotToggle = document.getElementById('chatbot-toggle');
 
-    bookingLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        console.log('Booking link clicked'); // Debug log
-        chatbotContainer.style.display = 'none';
-        calendlyContainer.style.display = 'block';
-    });
-backButton.addEventListener('click', function() {
-        calendlyContainer.style.display = 'none';
-        chatbotContainer.style.display = 'flex'; // Change this to 'flex' to match your CSS
-        chatbotToggle.style.display = 'block'; // Ensure the toggle button is visible
-    });
-});
+//     bookingLink.addEventListener('click', function(event) {
+//         event.preventDefault();
+//         console.log('Booking link clicked'); // Debug log
+//         chatbotContainer.style.display = 'none';
+//         calendlyContainer.style.display = 'block';
+//     });
+// backButton.addEventListener('click', function() {
+//         calendlyContainer.style.display = 'none';
+//         chatbotContainer.style.display = 'flex'; // Change this to 'flex' to match your CSS
+//         chatbotToggle.style.display = 'block'; // Ensure the toggle button is visible
+//     });
+// });
